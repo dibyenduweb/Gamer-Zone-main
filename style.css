@@ -87,8 +87,8 @@ body {
 }
 
 .hero-img {
-  width: 100%;
-  height: 500px;
+  width: 500px;
+  height: 446px;
   padding: 20px;
 }
 .hero-note {
@@ -126,15 +126,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding: 50px 150px;
+  margin-right: 150px;
+  margin-left: 50px;
 }
 .game-content {
   text-align: right;
 }
-.game-img{
-  width: 700px;
-  height: 500px;
-
+.game-img {
+  width: 800px;
+  height: 489px;
 }
 .game-title {
   font-size: 45px;
@@ -148,7 +148,6 @@ body {
   color: #534c64;
   font-size: 17px;
   font-weight: 400;
-
 }
 .game-btn {
   padding: 20px 30px;
@@ -181,6 +180,12 @@ body {
   font-size: 40px;
   font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
   font-weight: 800;
+}
+.online-description {
+  color: #534c64;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
 }
 .funny {
   background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
@@ -242,94 +247,87 @@ body {
 }
 
 /* play section style */
-.paly-container{
+.paly-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.paly-title{
-text-align: right;
-font-size: 48px;
-font-weight: 700;
+.paly-title {
+  text-align: right;
+  font-size: 48px;
+  font-weight: 700;
 }
-.ply-style{
-  background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+.ply-style {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-color: #0B0223;
-font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-font-size: 48px;
-font-style: normal;
-font-weight: 700;
-line-height: 60px;
+  color: #0b0223;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px;
 }
-.paly-description{
-  color: #534C64;
-  text-align:right;
+.paly-description {
+  color: #534c64;
+  text-align: right;
   font-size: 18px;
   font-weight: 400;
   width: 353px;
 }
-.play-img{
+.play-img {
   width: 634px;
   height: 650px;
-  
 }
-.play-img2{
-position: relative;
-bottom: 300px;
-right: 150px;
+.play-img2 {
+  position: relative;
+  bottom: 300px;
+  right: 150px;
 }
-.logos-container{
+.logos-container {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 150px;
-  gap:10px;
+  gap: 10px;
 }
 
-.logos-container .logo-img1:hover {
+:hover {
   border: 3px sold red;
-  color: #0b0223;
-
 }
 
-.logos-container1{
+.logos-container1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top:50px ;
+  padding-top: 50px;
   padding-bottom: 50px;
   gap: 10px;
 }
 
-.logo-img1{
+.logo-img1 {
   margin-left: 20px;
 }
 
-
-
-
-
 /* logos container */
-footer{
+footer {
   text-align: center;
   padding: 50px;
-  background: #0B0223;
+  background: #0b0223;
 }
-.footer-log{
+.footer-log {
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
 }
-.logo-text1{
-text-align: center;
-font-size: 45px;
-font-weight: 700;
+.logo-text1 {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
 }
-.footer-menu{
+.footer-menu {
   list-style: none;
   display: flex;
   color: #ffffff;
@@ -338,7 +336,7 @@ font-weight: 700;
   font-weight: 700;
   padding: 30px;
 }
-.footer-menu1{
+.footer-menu1 {
   list-style: none;
   display: flex;
   justify-content: center;
@@ -346,40 +344,20 @@ font-weight: 700;
   padding: 30px;
   color: #ffffff;
 }
-.footer-copy{
-color: rgba(255, 255, 255, 0.60);
-text-align: center;
-font-size: 16px;
-font-weight: 500;
+.footer-copy {
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
 }
-.footer-logos{
+.footer-logos {
   display: flex;
   justify-content: center;
-  gap:20px
-
+  gap: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* .hide{
+  display: none;
+} */
 
 /* this mobile device style */
 @media screen and (max-width: 576px) {
@@ -388,22 +366,129 @@ font-weight: 500;
   .menus,
   .hero-container,
   .game-container,
-  .paly-container{
+  .paly-container,
+  .online-container,
+  footer {
     flex-direction: column;
-    gap: 10px;
+    gap: 50px;
+    align-items: center;
+    width: 100%;
   }
-  .hero-container,
-  .paly-container{
+
+  .nav-container {
+    margin-left: 80px;
+  }
+  .logos-container,
+  .logos-container1 {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    width: 100%;
+  }
+  .hero-container {
     flex-direction: column-reverse;
+    width: 100%;
+  }
+  .play-img1 {
+    width: 500px;
+    height: 500px;
+    margin-left: 150px;
+  }
+  .play-img2 {
+    width: 500px;
+    height: 500px;
+    margin-left: 250px;
+  }
+
+  .online-container {
+    margin-left: 50px;
+  }
+  .logos-container,
+  .footer-menu, .footer-logos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .logos-container1,.footer-menu1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero-img {
+    width: 100%;
   }
   .game-img {
-    width: 100%;
-
+    width: 600px;
   }
   .game-content {
     text-align: center;
+    width: 400px;
   }
 }
-.hide{
-  display: block;
+
+
+
+/* small divice */
+
+@media screen and (min-width: 400px) and (max-width: 576px) {
+  .nav-container,
+  .img-container,
+  .menus,
+  .hero-container,
+  .game-container,
+  .paly-container,
+  .online-container,
+  footer {
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav-container {
+    margin-left: 80px;
+  }
+  .logos-container,
+  .logos-container1 {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    width: 100%;
+  }
+  .hero-container {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .play-img1 {
+    width: 500px;
+    height: 500px;
+    margin-left: 150px;
+  }
+  .play-img2 {
+    width: 500px;
+    height: 500px;
+    margin-left: 250px;
+  }
+
+  .online-container {
+    margin-left: 50px;
+  }
+  .logos-container,
+  .footer-menu, .footer-logos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .logos-container1,.footer-menu1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero-img {
+    width: 100%;
+  }
+  .game-img {
+    width: 600px;
+  }
+  .game-content {
+    text-align: center;
+    width: 400px;
+  }
 }
+
