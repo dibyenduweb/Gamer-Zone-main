@@ -285,48 +285,64 @@ body {
   bottom: 300px;
   right: 150px;
 }
-.logos-container {
+
+/* logo */
+.text-img-section {
+  width: 100%;
+  height: 350px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding-top: 150px;
-  gap: 10px;
+  justify-content: center;
 }
-
-:hover {
-  border: 3px sold red;
-}
-
-.logos-container1 {
+.text-img-container {
+  width: 1200px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  gap: 10px;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
 }
-
-.logo-img1 {
-  margin-left: 20px;
+.text-img {
+  display: flex;
+  align-items: center;
+  border: 2px solid transparent;
+  border-radius: 40px;
 }
-
-/* logos container */
-footer {
+.text-img:hover {
+  border: 2px solid #f948b2;
+  border-radius: 40px;
+  color: #f948b2;
+  transition: all 0.4s;
+}
+.text-img:hover p {
+  color: #f948b2;
+  transition: all 0.3s;
+}
+.text-img p {
+  color: #0b0223;
+  font-size: 16px;
+  font-weight: 600;
+}
+.text-img img {
+  margin-right: 10px;
+}
+footer{
   text-align: center;
   padding: 50px;
-  background: #0b0223;
+  background: #0b0223 ;
 }
-.footer-log {
+.footer-log{
   display: flex;
-  align-items: center;
   justify-content: center;
-  color: #fff;
+  align-items: center;
+  color:#fff;
 }
-.logo-text1 {
+.logo-text1{
   text-align: center;
   font-size: 45px;
   font-weight: 700;
 }
+
 .footer-menu {
   list-style: none;
   display: flex;
@@ -355,9 +371,25 @@ footer {
   justify-content: center;
   gap: 20px;
 }
-/* .hide{
-  display: none;
-} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* this mobile device style */
 @media screen and (max-width: 576px) {
@@ -403,11 +435,13 @@ footer {
     margin-left: 50px;
   }
   .logos-container,
-  .footer-menu, .footer-logos{
+  .footer-menu,
+  .footer-logos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
-  .logos-container1,.footer-menu1 {
+  .logos-container1,
+  .footer-menu1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
@@ -423,8 +457,6 @@ footer {
     width: 400px;
   }
 }
-
-
 
 /* small divice */
 
@@ -471,11 +503,13 @@ footer {
     margin-left: 50px;
   }
   .logos-container,
-  .footer-menu, .footer-logos{
+  .footer-menu,
+  .footer-logos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
-  .logos-container1,.footer-menu1 {
+  .logos-container1,
+  .footer-menu1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
@@ -491,4 +525,3 @@ footer {
     width: 400px;
   }
 }
-
