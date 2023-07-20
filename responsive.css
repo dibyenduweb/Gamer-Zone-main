@@ -87,7 +87,7 @@
 }
 .text-img-container{
   display: grid;
-  grid-template-columns: repeat(3,2fr);
+  grid-template-columns: repeat(3,1fr);
   width: 100%;
   
 }
